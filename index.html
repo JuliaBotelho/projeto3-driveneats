@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>DrivenEats</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topo">
+        <div class="title1">DrivenEats</div>
+        <div class="sub1">Sua comida em 6 minutos</div>
+    </div>
+    <div class="content">
+    <div class="box1">
+        <div class="title2">Primeiro, seu prato</div>
+        <div class="roll">
+        <button onclick="selecionarcomida(this) , getprice1(this)">
+            <img src="imagens/alfredo.jpg"/>
+            <div class="card">
+            <div class="sub2">Penne Alfredo</div>
+            <div class="desc"> Massa artesanal com molho branco</div>
+            <div class="price">R$ <span class="custa">19,90</span></div>
+        </div>
+        </button>
+        <button onclick="selecionarcomida(this), getprice1(this)">
+            <img src="imagens/burrito.jpg"/>
+            <div class="card">
+            <div class="sub2">Chilli Burrito</div>
+            <div class="desc"> Tortilla recheada de carne e frijoles</div>
+            <div class="price">R$ <span class="custa">18,90</span></div>
+        </div>
+        </button>
+        <button onclick="selecionarcomida(this), getprice1(this)">
+            <img src="imagens/salad.jpg"/>
+            <div class="card">
+            <div class="sub2">Salada Primavera</div>
+            <div class="desc"> Monte sua salada, base: mix de folhas</div>
+            <div class="price">R$ <span class="custa">16,90</span></div>
+        </div>
+        </button>
+        <button onclick="selecionarcomida(this), getprice1(this)">
+            <img src="imagens/cebola.jpg"/>
+            <div class="card">
+            <div class="sub2">Onion Rings</div>
+            <div class="desc"> Deliciosos anéis de cebola empanados </div>
+            <div class="price">R$ <span class="custa">17,90</span></div>
+        </div>
+        </button>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="title2">Agora, sua bebida</div>
+        <div class="roll">
+            <button onclick="selecionarbebida(this), getprice2(this)">
+            <img src="imagens/coke.jpg"/>
+            <div class="card">
+            <div class="sub2">Coca-Cola</div>
+            <div class="desc">Lata 350ml</div>
+            <div class="price">R$ <span class="custa">5,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarbebida(this), getprice2(this)">
+            <img src="imagens/pepsi.jpg"/>
+            <div class="card">
+            <div class="sub2">Pepsi</div>
+            <div class="desc">Lata 350ml</div>
+            <div class="price">R$ <span class="custa">4,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarbebida(this), getprice2(this)">
+            <img src="imagens/cervej.jpg"/>
+            <div class="card">
+            <div class="sub2">Cerveja</div>
+            <div class="desc">Long-neck</div>
+            <div class="price">R$ <span class="custa">7,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarbebida(this), getprice2(this)">
+            <img src="imagens/sucos.jpg"/>
+            <div class="card">
+            <div class="sub2">Sucos</div>
+            <div class="desc">Sabores diversos</div>
+            <div class="price">R$ <span class="custa">6,00</span></div>
+        </div>
+            </button>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="title2">Por fim, sua sobremesa</div>
+        <div class="roll">
+            <button onclick="selecionarsobremesa(this), getprice3(this)">
+            <img src="imagens/donut.jpg"/>
+            <div class="card">
+            <div class="sub2">Donuts</div>
+            <div class="desc">Donuts de nutella</div>
+            <div class="price">R$ <span class="custa">9,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarsobremesa(this), getprice3(this)">
+            <img src="imagens/gelato.jpg"/>
+            <div class="card">
+            <div class="sub2">Gelato</div>
+            <div class="desc">Copo pequeno, sabores diversos</div>
+            <div class="price">R$ <span class="custa">10,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarsobremesa(this), getprice3(this)">
+            <img src="imagens/croissant.jpg"/>
+            <div class="card">
+            <div class="sub2">Croissant</div>
+            <div class="desc">Croissant de chocolate</div>
+            <div class="price">R$ <span class="custa">7,90</span></div>
+        </div>
+            </button>
+            <button onclick="selecionarsobremesa(this), getprice3(this)">
+            <img src="imagens/brownie.jpg"/>
+            <div class="card">
+            <div class="sub2">Brownie</div>
+            <div class="desc">Brownie com nozes</div>
+            <div class="price">R$ <span class="custa">9,90</span></div>
+        </div>
+            </button>
+    </div>
+    </div>
+</div>
+    <div class="base">
+        <button class="selecione">Selecione os 3 itens para fechar o pedido</button>
+        <button class="fechar esconder" onclick="zap()">Fechar pedido</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
